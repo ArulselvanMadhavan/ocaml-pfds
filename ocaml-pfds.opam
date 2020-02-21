@@ -17,4 +17,5 @@ depends: [
     "ocaml"
     "ppx_deriving"
     "alcotest" {test}
+    "ocamlformat"
 ]

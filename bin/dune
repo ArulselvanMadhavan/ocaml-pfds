@@ -1,8 +1,10 @@
 (executable
-    (name main)
-    (libraries lib chapter2)
-    (preprocess (pps ppx_deriving.show)))
+ (name main)
+ (libraries lib chapter2)
+ (preprocess
+  (pps ppx_deriving.show)))
 
 (install
-    (section bin)
-    (files (main.exe as ocaml-pfds)))
+ (section bin)
+ (files
+  (main.exe as ocaml-pfds)))
