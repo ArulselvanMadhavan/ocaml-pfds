@@ -1,0 +1,14 @@
+* Introduction
+** Why StandardML
+   - strict
+   - module system for describing abstract data types
+** Func vs Imperative
+   - Destructive updates(assignments)
+     - Not allowed in func lang
+   - Need for persistence
+** Strict vs Lazy Evaluation
+   - Strict for reasoning about asymptotic complexity
+   - Strict languages can describe worst case data structures but not
+     amortized ones
+   - Lazy langs can describe amortized data structures but not worst
+     case ones

@@ -1,0 +1,4 @@
+(library
+ (name lib)
+ (public_name ocaml-pfds)
+ (preprocess (pps ppx_deriving.show)))
