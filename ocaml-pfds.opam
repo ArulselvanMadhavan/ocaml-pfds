@@ -5,9 +5,9 @@ authors: ["ArulselvanMadhavan"]
 homepage: "https://github.com/ArulselvanMadhavan/ocaml-pfds"
 bug-reports: "https://github.com/ArulselvanMadhavan/ocaml-pfds/issues"
 dev-repo: "git+https://github.com/ArulselvanMadhavan/ocaml-pfds.git"
-license: "MIT"
-synopsis: "A short description"
-description: "A longer description"
+license: "AGPL3.0"
+synopsis: "Purely Functional Data Structures in OCaml"
+description: "Purely Functional Data Structures in OCaml"
 doc: "https://github.com/ArulselvanMadhavan/ocaml-pfds"
 build: [
   ["dune" "build" "-p" name "-j" jobs]
