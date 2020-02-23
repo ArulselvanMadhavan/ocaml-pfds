@@ -16,6 +16,7 @@ depends: [
     "dune" {>= "2.0"}
     "ocaml"
     "ppx_deriving"
+    "ppx_inline_test"
     "alcotest" {test}
     "ocamlformat"
 ]
