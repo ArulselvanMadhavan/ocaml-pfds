@@ -14,9 +14,9 @@ module Unbalanced_set (E : Ordered) = struct
   let rec member = function
     | _, E -> false
     | x, T (l, y, r) ->
-      if E.lt (x, y)
+      if E.lt (x, y) (* Comparison#1 *)
       then member (x, l)
-      else if E.lt (y, x)
+      else if E.lt (y, x) (* Comparison#2 *)
       then member (x, r)
       else true
   ;;

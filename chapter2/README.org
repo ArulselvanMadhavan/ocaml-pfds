@@ -1,3 +1,4 @@
 * Persistence
 ** BST
-   - 
+   - More than pointer per node
+   - Element in a node
