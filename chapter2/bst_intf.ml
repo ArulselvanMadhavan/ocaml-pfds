@@ -14,3 +14,12 @@ module type Set = sig
   val insert : elem * set -> set
   val member : elem * set -> bool
 end
+
+module type Finite_map = sig
+  type key
+  type 'a map
+
+  val empty : 'a map
+  val bind : key * 'a * 'a map -> 'a map
+  val lookup : key * 'a map -> 'a
+end

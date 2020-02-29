@@ -67,9 +67,11 @@ let%test _ =
   && EO.member (10, t5)
   && EO.member (5, t5)
   && EO.member (0, t5) = false
+;;
 
 let%test _ =
-    let t1 = EO.insert (4, EO.empty) in
-    let t2 = EO.insert (4, t1) in
-    let t3 = EO.insert (5, t2) in
-    t1 = t2 && t1 != t3 && t2 != t3  
+  let t1 = EO.insert (4, EO.empty) in
+  let t2 = EO.insert (4, t1) in
+  let t3 = EO.insert (5, t2) in
+  t1 = t2 && t1 != t3 && t2 != t3
+;;
