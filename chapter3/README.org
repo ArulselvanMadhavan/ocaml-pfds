@@ -1,0 +1,6 @@
+* Familiar Data Structures in a Functional Setting
+** Leftist Heap
+   - Efficient access to the minimum element
+   - Priority Queue or heap
+   - Rank of left child is atleast as large as the rank of its right sibling
+   - Right spine of a node is the shortest path to an empty node

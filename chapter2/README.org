@@ -2,3 +2,5 @@
 ** BST
    - More than pointer per node
    - Element in a node
+** TODO:
+   - Add tests for exercise 2.6
