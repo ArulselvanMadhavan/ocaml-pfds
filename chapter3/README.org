@@ -3,4 +3,51 @@
    - Efficient access to the minimum element
    - Priority Queue or heap
    - Rank of left child is atleast as large as the rank of its right sibling
-   - Right spine of a node is the shortest path to an empty node
+   - Right spine of a node is the shortest path to an empty node\
+** Binomial Heaps
+   - /Binomial heaps/ or /Binomial queues/
+   - Insert and merge can be made to run in O(1).
+   - Binomial heaps are composed of primitive objects known as
+     binomial trees.
+   - Binomial tree of rank 0 is a singleton node.
+   - Binomial tree of rank r + 1 is formed by linking two binomial
+     trees of rank r, making one tree the leftmost child of the other.
+   - ANother definition: Binomial tree of rank r is a node with r
+     children (t1...tr), where each ti is a binomial tree of rank r - i.
+   - BTree of rank r -> has exactly 2^r nodes.
+   - Implementation of Binary Tree.
+
+*** Representation of Binomial tree
+    #+BEGIN_SRC ocaml
+    type tree = Node of int * Elem.t * tree list
+    #+END_SRC
+    - list of children are ordered in decreasing rank
+    - Heap order is maintained by linking larger roots under trees
+      with smaller roots
+    - Always link two elements of equal rank
+    - Each binomial tree of rank r contains 2^r elements
+
+*** Representation of Binomial heap
+    #+BEGIN_SRC ocaml
+    type heap = tree list
+    #+END_SRC
+    - Heap is a list of trees in increasing order of rank
+
+**** Insert
+     - Create a new singleton tree
+     - Step through the existing trees in the binomial heap in
+       increaisng order of rank(increasing or equal rank but never
+       less rank)
+       - Link trees of equal rank as we go
+       - Each link corresponds to a carry in binary arithmetic
+     - Find a missing rank - insert the tree
+
+**** Merge
+     - Similar to binary arithmetic
+     - Heap merge goes one tree at a time
+     - When two trees have same rank, you link them
+
+**** findMin
+
+**** deleteMin
+     
